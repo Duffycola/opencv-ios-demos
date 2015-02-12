@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller Grab Cut-->
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="ViewControllerGrabCut" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" image="lena.jpg" id="o2I-TY-0ee">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="TTB-Et-5oI">
+                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="85K-TL-WeS">
+                                        <connections>
+                                            <action selector="actionShowPhotoLibrary:" destination="2" id="Mpe-0g-Yrw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pB7-p3-OCZ"/>
+                                    <barButtonItem systemItem="compose" id="B8I-9B-KUi">
+                                        <connections>
+                                            <action selector="actionEdit:" destination="2" id="s4P-4L-vGk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" title="FG" id="R7e-g8-se9">
+                                        <connections>
+                                            <action selector="actionToggle:" destination="2" id="QwD-RG-pfy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="0wg-0t-YlC">
+                                        <connections>
+                                            <action selector="actionGrabCut:" destination="2" id="bY2-IB-AT4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mK4-AL-Qg0"/>
+                                    <barButtonItem title="Save" id="8ma-3e-17e">
+                                        <connections>
+                                            <action selector="actionSave:" destination="2" id="5eq-q6-YIs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Iteration 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hEH-v6-hfh">
+                                <rect key="frame" x="184" y="9" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.50000000000000011" contentMode="scaleToFill" image="black.png" id="gDm-bY-Bjg">
+                                <rect key="frame" x="20" y="171" width="280" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" style="white" id="15G-LZ-BqI">
+                                <rect key="frame" x="150" y="198" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="GrabCut is processing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hc4-uK-myy">
+                                <rect key="frame" x="91" y="231" width="171" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="15G-LZ-BqI" id="0Jv-ta-7nm"/>
+                        <outlet property="activityLabel" destination="hc4-uK-myy" id="2jt-uz-USl"/>
+                        <outlet property="activityView" destination="gDm-bY-Bjg" id="1w3-HR-8bu"/>
+                        <outlet property="buttonEdit" destination="B8I-9B-KUi" id="Xzs-Qq-hMX"/>
+                        <outlet property="buttonGrabCut" destination="0wg-0t-YlC" id="GjZ-Fx-nE4"/>
+                        <outlet property="buttonSave" destination="8ma-3e-17e" id="98Y-V3-NQ5"/>
+                        <outlet property="buttonToggle" destination="R7e-g8-se9" id="xY3-Mb-pIa"/>
+                        <outlet property="imageView" destination="o2I-TY-0ee" id="iWZ-lf-fuV"/>
+                        <outlet property="label" destination="hEH-v6-hfh" id="Np2-Z9-DEw"/>
+                    </connections>
+                </viewController>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="black.png" width="22" height="20"/>
+        <image name="lena.jpg" width="512" height="512"/>
+    </resources>
+    <classes>
+        <class className="ViewControllerGrabCut" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerGrabCut.h"/>
+            <relationships>
+                <relationship kind="action" name="actionEdit:"/>
+                <relationship kind="action" name="actionGrabCut:"/>
+                <relationship kind="action" name="actionSave:"/>
+                <relationship kind="action" name="actionShowPhotoLibrary:"/>
+                <relationship kind="action" name="actionToggle:"/>
+                <relationship kind="outlet" name="activityIndicatorView" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="activityLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="activityView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="buttonEdit" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="buttonGrabCut" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="buttonSave" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="buttonToggle" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

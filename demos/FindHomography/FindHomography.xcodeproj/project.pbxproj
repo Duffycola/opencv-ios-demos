@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C29209F15C693F30061151D /* ViewControllerFindHomographyLoadObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C29209E15C693F30061151D /* ViewControllerFindHomographyLoadObject.mm */; };
+		5C5C07951599A83200B94843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5C07941599A83200B94843 /* UIKit.framework */; };
+		5C5C07971599A83200B94843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5C07961599A83200B94843 /* Foundation.framework */; };
+		5C5C079F1599A83200B94843 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C5C079D1599A83200B94843 /* InfoPlist.strings */; };
+		5C5C07A11599A83200B94843 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C07A01599A83200B94843 /* main.m */; };
+		5C5C07A51599A83200B94843 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C07A41599A83200B94843 /* AppDelegate.m */; };
+		5C5C07A81599A83300B94843 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5C07A61599A83300B94843 /* MainStoryboard_iPhone.storyboard */; };
+		5C5C07AB1599A83300B94843 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5C07A91599A83300B94843 /* MainStoryboard_iPad.storyboard */; };
+		5C5C07DA1599AACB00B94843 /* app-icon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5C07D91599AACB00B94843 /* app-icon_57x57.png */; };
+		5C5C07DD1599F81000B94843 /* CvHomographyController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C07DC1599F81000B94843 /* CvHomographyController.mm */; };
+		5C5C07E0159B187800B94843 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5C07DF159B187700B94843 /* QuartzCore.framework */; };
+		5C5C07E2159B188000B94843 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5C07E1159B188000B94843 /* CoreImage.framework */; };
+		5C5C07E4159B188700B94843 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5C07E3159B188700B94843 /* CoreVideo.framework */; };
+		5C5C07E6159B189000B94843 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5C07E5159B189000B94843 /* AVFoundation.framework */; };
+		5C5C07E7159B18B100B94843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5C07981599A83200B94843 /* CoreGraphics.framework */; };
+		5C5C07E9159B18B800B94843 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5C07E8159B18B800B94843 /* CoreMedia.framework */; };
+		5C5C07EE159B3C2C00B94843 /* small_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5C07EC159B3C2C00B94843 /* small_logo.png */; };
+		5C5C07F1159B40C100B94843 /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C07F0159B40C100B94843 /* ImagePickerController.m */; };
+		5C5C07F4159B44FD00B94843 /* UIImageCVMatConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C07F3159B44FD00B94843 /* UIImageCVMatConverter.mm */; };
+		5C5C07FC159B46A200B94843 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C07F7159B46A200B94843 /* UIImage+Alpha.m */; };
+		5C5C07FD159B46A200B94843 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C07F9159B46A200B94843 /* UIImage+Resize.m */; };
+		5C5C07FE159B46A200B94843 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C07FB159B46A200B94843 /* UIImage+RoundedCorner.m */; };
+		5C5C0804159C234C00B94843 /* dotted_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5C0803159C234C00B94843 /* dotted_frame.png */; };
+		5C89EC4915E001D7002183F7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C89EC4815E001D7002183F7 /* AssetsLibrary.framework */; };
+		5C89EC4C15E001FF002183F7 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C89EC4B15E001FF002183F7 /* opencv2.framework */; };
+		5CAD0B9615A7A88D00B9C56C /* ViewControllerFindHomography.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CAD0B9515A7A88D00B9C56C /* ViewControllerFindHomography.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C29209D15C693F30061151D /* ViewControllerFindHomographyLoadObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerFindHomographyLoadObject.h; path = ViewControllers/ViewControllerFindHomographyLoadObject.h; sourceTree = "<group>"; };
+		5C29209E15C693F30061151D /* ViewControllerFindHomographyLoadObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewControllerFindHomographyLoadObject.mm; path = ViewControllers/ViewControllerFindHomographyLoadObject.mm; sourceTree = "<group>"; };
+		5C5C07901599A83200B94843 /* FindHomography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindHomography.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C5C07941599A83200B94843 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5C5C07961599A83200B94843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5C5C07981599A83200B94843 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5C5C079C1599A83200B94843 /* FindHomography-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FindHomography-Info.plist"; sourceTree = "<group>"; };
+		5C5C079E1599A83200B94843 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5C5C07A01599A83200B94843 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C5C07A21599A83200B94843 /* FindHomography-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FindHomography-Prefix.pch"; sourceTree = "<group>"; };
+		5C5C07A31599A83200B94843 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C5C07A41599A83200B94843 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C5C07A71599A83300B94843 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		5C5C07AA1599A83300B94843 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		5C5C07D91599AACB00B94843 /* app-icon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon_57x57.png"; sourceTree = "<group>"; };
+		5C5C07DB1599F81000B94843 /* CvHomographyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CvHomographyController.h; sourceTree = "<group>"; };
+		5C5C07DC1599F81000B94843 /* CvHomographyController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CvHomographyController.mm; sourceTree = "<group>"; };
+		5C5C07DF159B187700B94843 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5C5C07E1159B188000B94843 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		5C5C07E3159B188700B94843 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5C5C07E5159B189000B94843 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5C5C07E8159B18B800B94843 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		5C5C07EC159B3C2C00B94843 /* small_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_logo.png; sourceTree = "<group>"; };
+		5C5C07EF159B40C100B94843 /* ImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerController.h; sourceTree = "<group>"; };
+		5C5C07F0159B40C100B94843 /* ImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerController.m; sourceTree = "<group>"; };
+		5C5C07F2159B44FD00B94843 /* UIImageCVMatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageCVMatConverter.h; sourceTree = "<group>"; };
+		5C5C07F3159B44FD00B94843 /* UIImageCVMatConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIImageCVMatConverter.mm; sourceTree = "<group>"; };
+		5C5C07F6159B46A200B94843 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		5C5C07F7159B46A200B94843 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		5C5C07F8159B46A200B94843 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		5C5C07F9159B46A200B94843 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		5C5C07FA159B46A200B94843 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		5C5C07FB159B46A200B94843 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		5C5C0803159C234C00B94843 /* dotted_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dotted_frame.png; sourceTree = "<group>"; };
+		5C89EC4815E001D7002183F7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		5C89EC4B15E001FF002183F7 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../ocv.build/ios/opencv2.framework; sourceTree = "<group>"; };
+		5CAA7E8515A6339E00F425E5 /* ViewControllerFindHomography.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerFindHomography.h; path = ViewControllers/ViewControllerFindHomography.h; sourceTree = "<group>"; };
+		5CAD0B9515A7A88D00B9C56C /* ViewControllerFindHomography.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewControllerFindHomography.mm; path = ViewControllers/ViewControllerFindHomography.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C5C078D1599A83200B94843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C89EC4915E001D7002183F7 /* AssetsLibrary.framework in Frameworks */,
+				5C5C07E9159B18B800B94843 /* CoreMedia.framework in Frameworks */,
+				5C5C07E7159B18B100B94843 /* CoreGraphics.framework in Frameworks */,
+				5C5C07E6159B189000B94843 /* AVFoundation.framework in Frameworks */,
+				5C5C07E4159B188700B94843 /* CoreVideo.framework in Frameworks */,
+				5C5C07E2159B188000B94843 /* CoreImage.framework in Frameworks */,
+				5C5C07E0159B187800B94843 /* QuartzCore.framework in Frameworks */,
+				5C5C07951599A83200B94843 /* UIKit.framework in Frameworks */,
+				5C5C07971599A83200B94843 /* Foundation.framework in Frameworks */,
+				5C89EC4C15E001FF002183F7 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C5C07851599A83200B94843 = {
+			isa = PBXGroup;
+			children = (
+				5C5C07D91599AACB00B94843 /* app-icon_57x57.png */,
+				5C5C07B41599A84100B94843 /* shared */,
+				5C5C079A1599A83200B94843 /* FindHomography */,
+				5C5C07931599A83200B94843 /* Frameworks */,
+				5C5C07911599A83200B94843 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C5C07911599A83200B94843 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C07901599A83200B94843 /* FindHomography.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C5C07931599A83200B94843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C89EC4B15E001FF002183F7 /* opencv2.framework */,
+				5C89EC4815E001D7002183F7 /* AssetsLibrary.framework */,
+				5C5C07E8159B18B800B94843 /* CoreMedia.framework */,
+				5C5C07E5159B189000B94843 /* AVFoundation.framework */,
+				5C5C07E3159B188700B94843 /* CoreVideo.framework */,
+				5C5C07E1159B188000B94843 /* CoreImage.framework */,
+				5C5C07DF159B187700B94843 /* QuartzCore.framework */,
+				5C5C07941599A83200B94843 /* UIKit.framework */,
+				5C5C07961599A83200B94843 /* Foundation.framework */,
+				5C5C07981599A83200B94843 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C5C079A1599A83200B94843 /* FindHomography */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C07A31599A83200B94843 /* AppDelegate.h */,
+				5C5C07A41599A83200B94843 /* AppDelegate.m */,
+				5C5C07A61599A83300B94843 /* MainStoryboard_iPhone.storyboard */,
+				5C5C07A91599A83300B94843 /* MainStoryboard_iPad.storyboard */,
+				5C5C079B1599A83200B94843 /* Supporting Files */,
+			);
+			path = FindHomography;
+			sourceTree = "<group>";
+		};
+		5C5C079B1599A83200B94843 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C079C1599A83200B94843 /* FindHomography-Info.plist */,
+				5C5C079D1599A83200B94843 /* InfoPlist.strings */,
+				5C5C07A01599A83200B94843 /* main.m */,
+				5C5C07A21599A83200B94843 /* FindHomography-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C5C07B41599A84100B94843 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C07DB1599F81000B94843 /* CvHomographyController.h */,
+				5C5C07DC1599F81000B94843 /* CvHomographyController.mm */,
+				5C5C07EF159B40C100B94843 /* ImagePickerController.h */,
+				5C5C07F0159B40C100B94843 /* ImagePickerController.m */,
+				5C5C07EA159B3C2C00B94843 /* Images */,
+				5C5C07F5159B46A200B94843 /* UIImage-categories */,
+				5C5C07F2159B44FD00B94843 /* UIImageCVMatConverter.h */,
+				5C5C07F3159B44FD00B94843 /* UIImageCVMatConverter.mm */,
+				5CAA7E8415A6339400F425E5 /* ViewControllers */,
+			);
+			name = shared;
+			path = ../shared;
+			sourceTree = "<group>";
+		};
+		5C5C07EA159B3C2C00B94843 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C0803159C234C00B94843 /* dotted_frame.png */,
+				5C5C07EC159B3C2C00B94843 /* small_logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		5C5C07F5159B46A200B94843 /* UIImage-categories */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C07F6159B46A200B94843 /* UIImage+Alpha.h */,
+				5C5C07F7159B46A200B94843 /* UIImage+Alpha.m */,
+				5C5C07F8159B46A200B94843 /* UIImage+Resize.h */,
+				5C5C07F9159B46A200B94843 /* UIImage+Resize.m */,
+				5C5C07FA159B46A200B94843 /* UIImage+RoundedCorner.h */,
+				5C5C07FB159B46A200B94843 /* UIImage+RoundedCorner.m */,
+			);
+			path = "UIImage-categories";
+			sourceTree = "<group>";
+		};
+		5CAA7E8415A6339400F425E5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5CAA7E8515A6339E00F425E5 /* ViewControllerFindHomography.h */,
+				5CAD0B9515A7A88D00B9C56C /* ViewControllerFindHomography.mm */,
+				5C29209D15C693F30061151D /* ViewControllerFindHomographyLoadObject.h */,
+				5C29209E15C693F30061151D /* ViewControllerFindHomographyLoadObject.mm */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C5C078F1599A83200B94843 /* FindHomography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C5C07B11599A83300B94843 /* Build configuration list for PBXNativeTarget "FindHomography" */;
+			buildPhases = (
+				5C5C078C1599A83200B94843 /* Sources */,
+				5C5C078D1599A83200B94843 /* Frameworks */,
+				5C5C078E1599A83200B94843 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindHomography;
+			productName = FindHomography;
+			productReference = 5C5C07901599A83200B94843 /* FindHomography.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C5C07871599A83200B94843 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Eduard Feicho";
+			};
+			buildConfigurationList = 5C5C078A1599A83200B94843 /* Build configuration list for PBXProject "FindHomography" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5C5C07851599A83200B94843;
+			productRefGroup = 5C5C07911599A83200B94843 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C5C078F1599A83200B94843 /* FindHomography */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C5C078E1599A83200B94843 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C5C079F1599A83200B94843 /* InfoPlist.strings in Resources */,
+				5C5C07A81599A83300B94843 /* MainStoryboard_iPhone.storyboard in Resources */,
+				5C5C07AB1599A83300B94843 /* MainStoryboard_iPad.storyboard in Resources */,
+				5C5C07DA1599AACB00B94843 /* app-icon_57x57.png in Resources */,
+				5C5C07EE159B3C2C00B94843 /* small_logo.png in Resources */,
+				5C5C0804159C234C00B94843 /* dotted_frame.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C5C078C1599A83200B94843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C5C07A11599A83200B94843 /* main.m in Sources */,
+				5C5C07A51599A83200B94843 /* AppDelegate.m in Sources */,
+				5C5C07DD1599F81000B94843 /* CvHomographyController.mm in Sources */,
+				5C5C07F1159B40C100B94843 /* ImagePickerController.m in Sources */,
+				5C5C07F4159B44FD00B94843 /* UIImageCVMatConverter.mm in Sources */,
+				5C5C07FC159B46A200B94843 /* UIImage+Alpha.m in Sources */,
+				5C5C07FD159B46A200B94843 /* UIImage+Resize.m in Sources */,
+				5C5C07FE159B46A200B94843 /* UIImage+RoundedCorner.m in Sources */,
+				5CAD0B9615A7A88D00B9C56C /* ViewControllerFindHomography.mm in Sources */,
+				5C29209F15C693F30061151D /* ViewControllerFindHomographyLoadObject.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C5C079D1599A83200B94843 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C5C079E1599A83200B94843 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5C5C07A61599A83300B94843 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C5C07A71599A83300B94843 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		5C5C07A91599A83300B94843 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C5C07AA1599A83300B94843 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C5C07AF1599A83300B94843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C5C07B01599A83300B94843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C5C07B21599A83300B94843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../ocv.build/ios\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FindHomography/FindHomography-Prefix.pch";
+				INFOPLIST_FILE = "FindHomography/FindHomography-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5C5C07B31599A83300B94843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../ocv.build/ios\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FindHomography/FindHomography-Prefix.pch";
+				INFOPLIST_FILE = "FindHomography/FindHomography-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C5C078A1599A83200B94843 /* Build configuration list for PBXProject "FindHomography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C5C07AF1599A83300B94843 /* Debug */,
+				5C5C07B01599A83300B94843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C5C07B11599A83300B94843 /* Build configuration list for PBXNativeTarget "FindHomography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C5C07B21599A83300B94843 /* Debug */,
+				5C5C07B31599A83300B94843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C5C07871599A83200B94843 /* Project object */;
+}

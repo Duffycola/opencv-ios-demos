@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Qr5-1R-Ekb">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller Video Filter-->
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="ViewControllerVideoFilter" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="FKD-0o-doB">
+                                <rect key="frame" x="0.0" y="20" width="480" height="256"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="iNJ-ke-BnG">
+                                <rect key="frame" x="0.0" y="276" width="480" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Invert" id="cHS-2K-5NS">
+                                        <connections>
+                                            <action selector="actionInvert:" destination="2" id="Urx-r0-7Y4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Sobel3" id="kUH-ng-blL">
+                                        <connections>
+                                            <action selector="actionSobel:" destination="2" id="IUy-kI-2xJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Canny15" id="FLn-nL-SXw">
+                                        <connections>
+                                            <action selector="actionCanny:" destination="2" id="EJU-Oy-Ofd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="11" style="plain" systemItem="fixedSpace" id="ufa-Mf-sVu"/>
+                                    <barButtonItem style="plain" id="eFw-Ps-s0R">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ceO-ZX-NKh">
+                                            <rect key="frame" x="231" y="7" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" image="record_button.gif">
+                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="actionEnableProcessing:" destination="2" eventType="touchUpInside" id="9qJ-6u-smC"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem width="7" style="plain" systemItem="fixedSpace" id="TCZ-hR-YjB"/>
+                                    <barButtonItem title="Pixelize" id="1Rt-nX-tlH">
+                                        <connections>
+                                            <action selector="actionPixelize:" destination="2" id="feB-b2-n2F"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Soft Focus" id="9Py-EA-iQ9">
+                                        <connections>
+                                            <action selector="actionSoftFocus:" destination="2" id="6gP-sf-0a0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="YoB-rz-v84">
+                                <rect key="frame" x="434" y="165" width="29" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveVideo:" destination="2" eventType="touchUpInside" id="ZRt-1h-Zxr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Save Video" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="CeQ-Kf-WPA">
+                                <rect key="frame" x="342" y="169" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="v5y-lQ-WIF">
+                                <rect key="frame" x="0.0" y="232" width="480" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Load Image" style="done" id="4fz-nF-wdg">
+                                        <connections>
+                                            <action selector="showPhotoLibrary:" destination="2" id="SKl-aX-Ov2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Pinhole" id="T8V-Rh-o2d">
+                                        <connections>
+                                            <action selector="actionPinhole:" destination="2" id="Brk-R4-Kes"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Cartoon" id="qAo-nD-Npa">
+                                        <connections>
+                                            <action selector="actionCartoon:" destination="2" id="8eU-4Z-oTE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Median Blur" id="g08-B3-D72">
+                                        <connections>
+                                            <action selector="actionBlurMedian:" destination="2" id="MRv-zh-tzP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Retro" id="v9E-xe-IMA">
+                                        <connections>
+                                            <action selector="actionRetro:" destination="2" id="fLN-iD-iJc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rLo-sF-N8e"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imageView" destination="FKD-0o-doB" id="rfu-T8-g9u"/>
+                        <outlet property="saveButton" destination="YoB-rz-v84" id="KlU-Si-G8S"/>
+                        <outlet property="saveLabel" destination="CeQ-Kf-WPA" id="LhW-WZ-mv2"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="440" y="28"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kS8-zj-GSC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXE-tV-fuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="Qr5-1R-Ekb" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackTranslucent" id="kgm-88-tcQ">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="0qB-wU-CD0"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-86" y="12"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="record_button.gif" width="90" height="90"/>
+    </resources>
+    <classes>
+        <class className="ViewControllerVideoFilter" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerVideoFilter.h"/>
+            <relationships>
+                <relationship kind="action" name="actionBlurMedian:"/>
+                <relationship kind="action" name="actionCanny:"/>
+                <relationship kind="action" name="actionCartoon:"/>
+                <relationship kind="action" name="actionEnableProcessing:"/>
+                <relationship kind="action" name="actionInvert:"/>
+                <relationship kind="action" name="actionPinhole:"/>
+                <relationship kind="action" name="actionPixelize:"/>
+                <relationship kind="action" name="actionRetro:"/>
+                <relationship kind="action" name="actionSobel:"/>
+                <relationship kind="action" name="actionSoftFocus:"/>
+                <relationship kind="action" name="saveVideo:"/>
+                <relationship kind="action" name="showPhotoLibrary:"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="saveButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="saveLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
