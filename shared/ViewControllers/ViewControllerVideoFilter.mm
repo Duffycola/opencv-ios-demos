@@ -252,13 +252,13 @@ using namespace cv;
         split(image, planes);
     
         if (enableBlurMedian) {
-            [CvFilterController filterBlurMedian:planes.at(0) withKernelSize:11];
+            [CvConvolutionController filterBlurMedian:planes.at(0) withKernelSize:11];
         }
         if (enableSobel) {
-            [CvFilterController filterSobel:planes.at(0) withKernelSize:3];
+            [CvConvolutionController filterSobel:planes.at(0) withKernelSize:3];
         }
         if (enableCanny) {
-            [CvFilterController filterCanny:planes.at(0) withKernelSize:3 andLowThreshold:15];
+            [CvConvolutionController filterCanny:planes.at(0) withKernelSize:3 andLowThreshold:15];
         }
         
         merge(planes, image);

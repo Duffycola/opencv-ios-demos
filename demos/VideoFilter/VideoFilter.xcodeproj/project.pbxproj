@@ -10,7 +10,7 @@
 		5C6AB05D16029142000C0194 /* imageFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C6AB05C16029142000C0194 /* imageFilter.mm */; };
 		5C7DE4A115E3BF11009D4CD1 /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DE4A015E3BF11009D4CD1 /* ImagePickerController.m */; };
 		5C7DE4A615E3BF4D009D4CD1 /* UIImageCVMatConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DE4A515E3BF4D009D4CD1 /* UIImageCVMatConverter.mm */; };
-		5C7DE4A915E3BFD3009D4CD1 /* CvFilterController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DE4A815E3BFD3009D4CD1 /* CvFilterController.mm */; };
+		5C7DE4A915E3BFD3009D4CD1 /* CvConvolutionController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DE4A815E3BFD3009D4CD1 /* CvConvolutionController.mm */; };
 		5C7DE4AB15E3C49C009D4CD1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C7DE4AA15E3C49C009D4CD1 /* Accelerate.framework */; };
 		5C89EB8D15DE4DB1002183F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C89EB8C15DE4DB1002183F7 /* UIKit.framework */; };
 		5C89EB8F15DE4DB1002183F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C89EB8E15DE4DB1002183F7 /* Foundation.framework */; };
@@ -46,8 +46,8 @@
 		5C7DE4A015E3BF11009D4CD1 /* ImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImagePickerController.m; path = ../shared/ImagePickerController.m; sourceTree = "<group>"; };
 		5C7DE4A415E3BF4D009D4CD1 /* UIImageCVMatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageCVMatConverter.h; path = ../shared/UIImageCVMatConverter.h; sourceTree = "<group>"; };
 		5C7DE4A515E3BF4D009D4CD1 /* UIImageCVMatConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UIImageCVMatConverter.mm; path = ../shared/UIImageCVMatConverter.mm; sourceTree = "<group>"; };
-		5C7DE4A715E3BFD3009D4CD1 /* CvFilterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CvFilterController.h; path = ../shared/CvFilterController.h; sourceTree = "<group>"; };
-		5C7DE4A815E3BFD3009D4CD1 /* CvFilterController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CvFilterController.mm; path = ../shared/CvFilterController.mm; sourceTree = "<group>"; };
+		5C7DE4A715E3BFD3009D4CD1 /* CvConvolutionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CvConvolutionController.h; path = ../shared/CvConvolutionController.h; sourceTree = "<group>"; };
+		5C7DE4A815E3BFD3009D4CD1 /* CvConvolutionController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CvConvolutionController.mm; path = ../shared/CvConvolutionController.mm; sourceTree = "<group>"; };
 		5C7DE4AA15E3C49C009D4CD1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		5C89EB8815DE4DB1002183F7 /* VideoFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C89EB8C15DE4DB1002183F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -180,8 +180,8 @@
 		5C89EBB615DE4E76002183F7 /* shared */ = {
 			isa = PBXGroup;
 			children = (
-				5C7DE4A715E3BFD3009D4CD1 /* CvFilterController.h */,
-				5C7DE4A815E3BFD3009D4CD1 /* CvFilterController.mm */,
+				5C7DE4A715E3BFD3009D4CD1 /* CvConvolutionController.h */,
+				5C7DE4A815E3BFD3009D4CD1 /* CvConvolutionController.mm */,
 				5C7DE49F15E3BF11009D4CD1 /* ImagePickerController.h */,
 				5C7DE4A015E3BF11009D4CD1 /* ImagePickerController.m */,
 				5C7DE4A415E3BF4D009D4CD1 /* UIImageCVMatConverter.h */,
@@ -282,7 +282,7 @@
 				5C89EC4115DFFEE4002183F7 /* ViewControllerVideoFilter.mm in Sources */,
 				5C7DE4A115E3BF11009D4CD1 /* ImagePickerController.m in Sources */,
 				5C7DE4A615E3BF4D009D4CD1 /* UIImageCVMatConverter.mm in Sources */,
-				5C7DE4A915E3BFD3009D4CD1 /* CvFilterController.mm in Sources */,
+				5C7DE4A915E3BFD3009D4CD1 /* CvConvolutionController.mm in Sources */,
 				5C6AB05D16029142000C0194 /* imageFilter.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

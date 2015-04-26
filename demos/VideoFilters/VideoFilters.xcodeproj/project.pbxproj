@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C50CA1C15A213EC005DBE0E /* CvFilterController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C50CA1915A213EC005DBE0E /* CvFilterController.mm */; };
+		5C50CA1C15A213EC005DBE0E /* CvConvolutionController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C50CA1915A213EC005DBE0E /* CvConvolutionController.mm */; };
 		5C6BFC841588F79400F7692B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6BFC831588F79400F7692B /* UIKit.framework */; };
 		5C6BFC861588F79400F7692B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6BFC851588F79400F7692B /* Foundation.framework */; };
 		5C6BFC881588F79400F7692B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6BFC871588F79400F7692B /* CoreGraphics.framework */; };
@@ -27,22 +27,22 @@
 		5C7DE48315E3B80B009D4CD1 /* UIImageCVMatConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DE48215E3B80B009D4CD1 /* UIImageCVMatConverter.mm */; };
 		5C89EC4E15E003AF002183F7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C89EC4D15E003AE002183F7 /* AssetsLibrary.framework */; };
 		5C955498158AC49600462759 /* app-icon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C955497158AC49600462759 /* app-icon_57x57.png */; };
-		5CAD0B9415A7A87C00B9C56C /* ViewControllerVideoFilters.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CAD0B9315A7A87C00B9C56C /* ViewControllerVideoFilters.mm */; };
+		5CAD0B9415A7A87C00B9C56C /* ViewControllerVideoConvolution.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CAD0B9315A7A87C00B9C56C /* ViewControllerVideoConvolution.mm */; };
 		5CD8E83C15A21FD500AB1240 /* camera_switch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CD8E83B15A21FD500AB1240 /* camera_switch.png */; };
 		5CD8E83E15A222E700AB1240 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD8E83D15A222E700AB1240 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C50CA1815A213EC005DBE0E /* CvFilterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CvFilterController.h; path = ../shared/CvFilterController.h; sourceTree = "<group>"; };
-		5C50CA1915A213EC005DBE0E /* CvFilterController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CvFilterController.mm; path = ../shared/CvFilterController.mm; sourceTree = "<group>"; };
-		5C6BFC7F1588F79400F7692B /* VideoFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoFilters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C50CA1815A213EC005DBE0E /* CvConvolutionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CvConvolutionController.h; path = ../shared/CvConvolutionController.h; sourceTree = "<group>"; };
+		5C50CA1915A213EC005DBE0E /* CvConvolutionController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CvConvolutionController.mm; path = ../shared/CvConvolutionController.mm; sourceTree = "<group>"; };
+		5C6BFC7F1588F79400F7692B /* VideoConvolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoConvolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6BFC831588F79400F7692B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5C6BFC851588F79400F7692B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5C6BFC871588F79400F7692B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5C6BFC8B1588F79400F7692B /* VideoFilters-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoFilters-Info.plist"; sourceTree = "<group>"; };
+		5C6BFC8B1588F79400F7692B /* VideoConvolution-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoConvolution-Info.plist"; sourceTree = "<group>"; };
 		5C6BFC8D1588F79400F7692B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C6BFC8F1588F79400F7692B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5C6BFC911588F79400F7692B /* VideoFilters-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoFilters-Prefix.pch"; sourceTree = "<group>"; };
+		5C6BFC911588F79400F7692B /* VideoConvolution-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoConvolution-Prefix.pch"; sourceTree = "<group>"; };
 		5C6BFC921588F79400F7692B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C6BFC931588F79400F7692B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5C6BFC991588F79400F7692B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -59,9 +59,9 @@
 		5C7DE48115E3B80B009D4CD1 /* UIImageCVMatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageCVMatConverter.h; path = ../shared/UIImageCVMatConverter.h; sourceTree = "<group>"; };
 		5C7DE48215E3B80B009D4CD1 /* UIImageCVMatConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UIImageCVMatConverter.mm; path = ../shared/UIImageCVMatConverter.mm; sourceTree = "<group>"; };
 		5C89EC4D15E003AE002183F7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		5C955497158AC49600462759 /* app-icon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-icon_57x57.png"; path = "../../VideoFilters/app-icon_57x57.png"; sourceTree = "<group>"; };
-		5CAA7E8015A6337100F425E5 /* ViewControllerVideoFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerVideoFilters.h; path = ../shared/ViewControllers/ViewControllerVideoFilters.h; sourceTree = "<group>"; };
-		5CAD0B9315A7A87C00B9C56C /* ViewControllerVideoFilters.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewControllerVideoFilters.mm; path = ../shared/ViewControllers/ViewControllerVideoFilters.mm; sourceTree = "<group>"; };
+		5C955497158AC49600462759 /* app-icon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-icon_57x57.png"; path = "../../VideoConvolution/app-icon_57x57.png"; sourceTree = "<group>"; };
+		5CAA7E8015A6337100F425E5 /* ViewControllerVideoConvolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerVideoConvolution.h; path = ../shared/ViewControllers/ViewControllerVideoConvolution.h; sourceTree = "<group>"; };
+		5CAD0B9315A7A87C00B9C56C /* ViewControllerVideoConvolution.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewControllerVideoConvolution.mm; path = ../shared/ViewControllers/ViewControllerVideoConvolution.mm; sourceTree = "<group>"; };
 		5CD8E83B15A21FD500AB1240 /* camera_switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_switch.png; sourceTree = "<group>"; };
 		5CD8E83D15A222E700AB1240 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				5C6BFCA71588F7D000F7692B /* shared */,
-				5C6BFC891588F79400F7692B /* VideoFilters */,
+				5C6BFC891588F79400F7692B /* VideoConvolution */,
 				5C6BFC821588F79400F7692B /* Frameworks */,
 				5C6BFC801588F79400F7692B /* Products */,
 			);
@@ -101,7 +101,7 @@
 		5C6BFC801588F79400F7692B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C6BFC7F1588F79400F7692B /* VideoFilters.app */,
+				5C6BFC7F1588F79400F7692B /* VideoConvolution.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5C6BFC891588F79400F7692B /* VideoFilters */ = {
+		5C6BFC891588F79400F7692B /* VideoConvolution */ = {
 			isa = PBXGroup;
 			children = (
 				5C6BFC921588F79400F7692B /* AppDelegate.h */,
@@ -133,16 +133,16 @@
 				5C6BFC9B1588F79400F7692B /* ViewController_iPad.xib */,
 				5C6BFC8A1588F79400F7692B /* Supporting Files */,
 			);
-			path = VideoFilters;
+			path = VideoConvolution;
 			sourceTree = "<group>";
 		};
 		5C6BFC8A1588F79400F7692B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5C6BFC8B1588F79400F7692B /* VideoFilters-Info.plist */,
+				5C6BFC8B1588F79400F7692B /* VideoConvolution-Info.plist */,
 				5C6BFC8C1588F79400F7692B /* InfoPlist.strings */,
 				5C6BFC8F1588F79400F7692B /* main.m */,
-				5C6BFC911588F79400F7692B /* VideoFilters-Prefix.pch */,
+				5C6BFC911588F79400F7692B /* VideoConvolution-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,8 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				5C6BFCB51588F87300F7692B /* Images */,
-				5C50CA1815A213EC005DBE0E /* CvFilterController.h */,
-				5C50CA1915A213EC005DBE0E /* CvFilterController.mm */,
+				5C50CA1815A213EC005DBE0E /* CvConvolutionController.h */,
+				5C50CA1915A213EC005DBE0E /* CvConvolutionController.mm */,
 				5C7DE47D15E3B7FA009D4CD1 /* ImagePickerController.h */,
 				5C7DE47E15E3B7FA009D4CD1 /* ImagePickerController.m */,
 				5C7DE48115E3B80B009D4CD1 /* UIImageCVMatConverter.h */,
@@ -176,8 +176,8 @@
 		5CAA7E8315A6337800F425E5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5CAA7E8015A6337100F425E5 /* ViewControllerVideoFilters.h */,
-				5CAD0B9315A7A87C00B9C56C /* ViewControllerVideoFilters.mm */,
+				5CAA7E8015A6337100F425E5 /* ViewControllerVideoConvolution.h */,
+				5CAD0B9315A7A87C00B9C56C /* ViewControllerVideoConvolution.mm */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -185,9 +185,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5C6BFC7E1588F79400F7692B /* VideoFilters */ = {
+		5C6BFC7E1588F79400F7692B /* VideoConvolution */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C6BFCA01588F79400F7692B /* Build configuration list for PBXNativeTarget "VideoFilters" */;
+			buildConfigurationList = 5C6BFCA01588F79400F7692B /* Build configuration list for PBXNativeTarget "VideoConvolution" */;
 			buildPhases = (
 				5C6BFC7B1588F79400F7692B /* Sources */,
 				5C6BFC7C1588F79400F7692B /* Frameworks */,
@@ -197,9 +197,9 @@
 			);
 			dependencies = (
 			);
-			name = VideoFilters;
-			productName = VideoFilters;
-			productReference = 5C6BFC7F1588F79400F7692B /* VideoFilters.app */;
+			name = VideoConvolution;
+			productName = VideoConvolution;
+			productReference = 5C6BFC7F1588F79400F7692B /* VideoConvolution.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +211,7 @@
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Eduard Feicho";
 			};
-			buildConfigurationList = 5C6BFC791588F79300F7692B /* Build configuration list for PBXProject "VideoFilters" */;
+			buildConfigurationList = 5C6BFC791588F79300F7692B /* Build configuration list for PBXProject "VideoConvolution" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -223,7 +223,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C6BFC7E1588F79400F7692B /* VideoFilters */,
+				5C6BFC7E1588F79400F7692B /* VideoConvolution */,
 			);
 		};
 /* End PBXProject section */
@@ -251,8 +251,8 @@
 			files = (
 				5C6BFC901588F79400F7692B /* main.m in Sources */,
 				5C6BFC941588F79400F7692B /* AppDelegate.m in Sources */,
-				5C50CA1C15A213EC005DBE0E /* CvFilterController.mm in Sources */,
-				5CAD0B9415A7A87C00B9C56C /* ViewControllerVideoFilters.mm in Sources */,
+				5C50CA1C15A213EC005DBE0E /* CvConvolutionController.mm in Sources */,
+				5CAD0B9415A7A87C00B9C56C /* ViewControllerVideoConvolution.mm in Sources */,
 				5C7DE47F15E3B7FA009D4CD1 /* ImagePickerController.m in Sources */,
 				5C7DE48315E3B80B009D4CD1 /* UIImageCVMatConverter.mm in Sources */,
 			);
@@ -343,9 +343,9 @@
 					"\"$(SRCROOT)/../../ocv.build/ios\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VideoFilters/VideoFilters-Prefix.pch";
-				INFOPLIST_FILE = "VideoFilters/VideoFilters-Info.plist";
-				PRODUCT_NAME = VideoFilters;
+				GCC_PREFIX_HEADER = "VideoConvolution/VideoConvolution-Prefix.pch";
+				INFOPLIST_FILE = "VideoConvolution/VideoConvolution-Info.plist";
+				PRODUCT_NAME = VideoConvolution;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -358,9 +358,9 @@
 					"\"$(SRCROOT)/../../ocv.build/ios\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VideoFilters/VideoFilters-Prefix.pch";
-				INFOPLIST_FILE = "VideoFilters/VideoFilters-Info.plist";
-				PRODUCT_NAME = VideoFilters;
+				GCC_PREFIX_HEADER = "VideoConvolution/VideoConvolution-Prefix.pch";
+				INFOPLIST_FILE = "VideoConvolution/VideoConvolution-Info.plist";
+				PRODUCT_NAME = VideoConvolution;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -368,7 +368,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C6BFC791588F79300F7692B /* Build configuration list for PBXProject "VideoFilters" */ = {
+		5C6BFC791588F79300F7692B /* Build configuration list for PBXProject "VideoConvolution" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C6BFC9E1588F79400F7692B /* Debug */,
@@ -377,7 +377,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C6BFCA01588F79400F7692B /* Build configuration list for PBXNativeTarget "VideoFilters" */ = {
+		5C6BFCA01588F79400F7692B /* Build configuration list for PBXNativeTarget "VideoConvolution" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C6BFCA11588F79400F7692B /* Debug */,

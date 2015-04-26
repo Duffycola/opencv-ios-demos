@@ -1,6 +1,6 @@
 //
-//  CvFilterController.h
-//  VideoFilters
+//  CvConvolutionController.h
+//  VideoConvolution
 //
 //  Created by Eduard Feicho on 13.06.12.
 //  Copyright (c) 2012 Eduard Feicho. All rights reserved.
@@ -25,7 +25,7 @@ using namespace std;
 
 
 
-@interface CvFilterController : NSObject
+@interface CvConvolutionController : NSObject
 {
     
 }

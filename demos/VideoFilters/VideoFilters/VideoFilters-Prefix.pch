@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'VideoFilters' target in the 'VideoFilters' project
+// Prefix header for all source files of the 'VideoConvolution' target in the 'VideoConvolution' project
 //
 
 #import <Availability.h>

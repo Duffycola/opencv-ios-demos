@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  VideoFilters
+//  VideoConvolution
 //
 //  Created by Eduard Feicho on 08.06.12.
 //  Copyright (c) 2012 Eduard Feicho. All rights reserved.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import <opencv2/highgui/cap_ios.h>
-#import "CvFilterController.h"
+#import "CvConvolutionController.h"
 #import "ImagePickerController.h"
 
 
@@ -26,7 +26,7 @@ enum OpenCV_Filter_Mode {
 
 
 
-@interface ViewControllerVideoFilters : UIViewController<CvVideoCameraDelegate, UIActionSheetDelegate, UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@interface ViewControllerVideoConvolution : UIViewController<CvVideoCameraDelegate, UIActionSheetDelegate, UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 {
 	ImagePickerController* imagePicker;
 	

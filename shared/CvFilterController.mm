@@ -1,17 +1,17 @@
 //
-//  CvFilterController.m
-//  VideoFilters
+//  CvConvolutionController.m
+//  VideoConvolution
 //
 //  Created by Eduard Feicho on 13.06.12.
 //  Copyright (c) 2012 Eduard Feicho. All rights reserved.
 //
 
-#import "CvFilterController.h"
+#import "CvConvolutionController.h"
 
 #include <opencv2/core/core.hpp>
 
 
-@implementation CvFilterController
+@implementation CvConvolutionController
 
 
 #ifdef __cplusplus
@@ -66,7 +66,7 @@
 	int delta = 0;
 	int ddepth = CV_16S;
 	
-	[CvFilterController filterBlurGaussian:image withKernelSize:3];
+	[CvConvolutionController filterBlurGaussian:image withKernelSize:3];
 	
 	const int& width = image.cols;
 	const int& height = image.rows;
@@ -94,7 +94,7 @@
 	int delta = 0;
 	int ddepth = CV_16S;
 	
-	[CvFilterController filterBlurGaussian:image withKernelSize:kernel_size];
+	[CvConvolutionController filterBlurGaussian:image withKernelSize:kernel_size];
 	
 	const int& width = image.cols;
 	const int& height = image.rows;

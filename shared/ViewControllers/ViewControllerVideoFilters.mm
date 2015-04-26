@@ -1,12 +1,12 @@
 //
 //  ViewController.m
-//  VideoFilters
+//  VideoConvolution
 //
 //  Created by Eduard Feicho on 08.06.12.
 //  Copyright (c) 2012 Eduard Feicho. All rights reserved.
 //
 
-#import "ViewControllerVideoFilters.h"
+#import "ViewControllerVideoConvolution.h"
 #import "UIImageCVMatConverter.h"
 
 // keep these two arrays in sync
@@ -28,11 +28,11 @@ enum OpenCV_Filter_Mode actionSheetEdgeModes[] = {
 
 
 
-@interface ViewControllerVideoFilters ()
+@interface ViewControllerVideoConvolution ()
 
 @end
 
-@implementation ViewControllerVideoFilters
+@implementation ViewControllerVideoConvolution
 
 
 #pragma mark - Properties
@@ -71,7 +71,7 @@ enum OpenCV_Filter_Mode actionSheetEdgeModes[] = {
 {
     [super viewDidLoad];
 	
-	self.title = @"VideoFilters";
+	self.title = @"VideoConvolution";
 	
 	self.videoCamera = [[CvVideoCamera alloc] initWithParentView:self.imageView];
 	self.videoCamera.delegate = self;
@@ -120,31 +120,31 @@ enum OpenCV_Filter_Mode actionSheetEdgeModes[] = {
 {
     switch (mode) {
         case FILTERMODE_BLUR_HOMOGENEOUS:
-            [CvFilterController filterBlurHomogeneousAccelerated:image withKernelSize:kernel_size];
+            [CvConvolutionController filterBlurHomogeneousAccelerated:image withKernelSize:kernel_size];
             break;
             
         case FILTERMODE_BLUR_GAUSSIAN:
-            [CvFilterController filterBlurGaussian:image withKernelSize:kernel_size];
+            [CvConvolutionController filterBlurGaussian:image withKernelSize:kernel_size];
             break;
             
         case FILTERMODE_BLUR_MEDIAN:
-            [CvFilterController filterBlurMedian:image withKernelSize:kernel_size];
+            [CvConvolutionController filterBlurMedian:image withKernelSize:kernel_size];
             break;
             
         case FILTERMODE_BLUR_BILATERAL:
-            [CvFilterController filterBlurBilateral:image withKernelSize:kernel_size];
+            [CvConvolutionController filterBlurBilateral:image withKernelSize:kernel_size];
             break;
             
         case FILTERMODE_LAPLACIAN:
-            [CvFilterController filterLaplace:image withKernelSize:kernel_size];
+            [CvConvolutionController filterLaplace:image withKernelSize:kernel_size];
             break;
             
         case FILTERMODE_SOBEL:
-            [CvFilterController filterSobel:image withKernelSize:kernel_size];
+            [CvConvolutionController filterSobel:image withKernelSize:kernel_size];
             break;
             
         case FILTERMODE_CANNY:
-            [CvFilterController filterCanny:image withKernelSize:3 andLowThreshold:threshold];
+            [CvConvolutionController filterCanny:image withKernelSize:3 andLowThreshold:threshold];
             break;
             
         default:

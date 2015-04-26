@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  VideoFilters
+//  VideoConvolution
 //
 //  Created by Eduard Feicho on 13.06.12.
 //  Copyright (c) 2012 Eduard Feicho. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "ViewControllerVideoFilters.h"
+#import "ViewControllerVideoConvolution.h"
 
 @implementation AppDelegate
 
@@ -20,9 +20,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-	    self.viewController = [[ViewControllerVideoFilters alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
+	    self.viewController = [[ViewControllerVideoConvolution alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
 	} else {
-	    self.viewController = [[ViewControllerVideoFilters alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
+	    self.viewController = [[ViewControllerVideoConvolution alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
 	}
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

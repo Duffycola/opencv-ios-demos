@@ -14,7 +14,7 @@
 #import <opencv2/highgui/cap_ios.h>
 
 #import "imageFilter.h"
-#import "CvFilterController.h"
+#import "CvConvolutionController.h"
 
 
 @interface ViewControllerVideoFilter : UIViewController<CvVideoCameraDelegate, UINavigationControllerDelegate,UIImagePickerControllerDelegate>
