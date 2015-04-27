@@ -44,8 +44,6 @@ Note, the XCode projects are configured to look for opencv2.framework at /build/
 
 5) Once you have understood how to obtain a cv::Mat in your iOS project, feel free to re-use the modular demo controllers in [shared](https://github.com/Duffycola/opencv-ios-demos/blob/master/shared) and please feel free to contribute.
 
-- [ ] Note, the XCode projects are currently outdated. Last time they have been updated in 2012.
-
 6) Advanced: Dig deep into how OpenCV obtains image/video frames from the native interface, wraps them into C datastructures, calls the C callback to let you process each frame (hence .mm files), and then updates the output target:
 
 [opencv/modules/videoio/include/opencv2/videoio/cap_ios.h](https://github.com/Itseez/opencv/blob/master/modules/videoio/include/opencv2/videoio/cap_ios.h)
@@ -54,3 +52,9 @@ Note, the XCode projects are configured to look for opencv2.framework at /build/
 [opencv/modules/videoio/src/cap_ios_video_camera.mm](https://github.com/Itseez/opencv/blob/master/modules/videoio/src/cap_ios_video_camera.mm)
 
 7) Contribute to the iOS project, for example by adding to the very [sparse documentation](http://docs.opencv.org/doc/tutorials/ios/table_of_content_ios/table_of_content_ios.html#table-of-content-ios).
+
+
+# TODOs
+-------
+- [X] ~~Note, the XCode projects are currently outdated. Last time they have been updated in 2012.~~
+- [ ] The XCode projects compile, but the XIB files/storyboards are not up to date with current layout guides.
