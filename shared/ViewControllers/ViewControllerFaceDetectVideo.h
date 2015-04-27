@@ -8,21 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+
 #import "ImagePickerController.h"
-#import <opencv2/highgui/cap_ios.h>
 #import "CvFaceDetector.h"
 
-
-@interface ViewControllerFaceDetectVideo : UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate,CvVideoCameraDelegate>
+@interface ViewControllerFaceDetectVideo : UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 {
 	UIImageView* imageView;
 	UILabel* labelFPS;
 	UISlider* sliderFPS;
 	
 	BOOL enableProcessing;
-	
-	
-	CvVideoCamera* videoCamera;
+
 	CvFaceDetector* cvFaceDetector;
 	ImagePickerController* imagePicker;
 }
@@ -38,7 +35,7 @@
 - (IBAction)showVideoCamera:(id)sender;
 
 
-@property (nonatomic, retain) CvVideoCamera* videoCamera;
+
 @property (nonatomic, retain) CvFaceDetector* cvFaceDetector;
 @property (nonatomic, retain) ImagePickerController* imagePicker;
 

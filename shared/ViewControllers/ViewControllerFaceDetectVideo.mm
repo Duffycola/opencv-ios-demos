@@ -10,9 +10,16 @@
 #import "UIImage+Resize.h"
 #import "UIImageCVMatConverter.h"
 
-@interface ViewControllerFaceDetectVideo ()
 
+#import <opencv2/highgui/cap_ios.h>
+
+@interface ViewControllerFaceDetectVideo ()<CvVideoCameraDelegate>
+{
+	CvVideoCamera* videoCamera;
+}
+@property (nonatomic, strong) CvVideoCamera* videoCamera;
 @end
+
 
 
 @implementation ViewControllerFaceDetectVideo
