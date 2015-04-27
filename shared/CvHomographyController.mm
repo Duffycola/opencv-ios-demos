@@ -590,7 +590,7 @@
 		keypoints_scene.resize(numFeaturesObjective + numFeaturesVariance);
 	}
 	
-	[self adaptThreshold:keypoints_scene.size()];
+	[self adaptThreshold:(int)keypoints_scene.size()];
 }
 
 

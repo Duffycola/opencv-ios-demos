@@ -63,6 +63,7 @@ using namespace cv;
     startOrientation = self.interfaceOrientation;
     switch (self.interfaceOrientation) {
         case UIInterfaceOrientationLandscapeLeft:
+		default:
             self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationLandscapeLeft;
             break;
         case UIInterfaceOrientationLandscapeRight:
@@ -218,9 +219,9 @@ using namespace cv;
 
 - (void)processImage:(cv::Mat&)image;
 {
-    const int& width = image.cols;
-	const int& height = image.rows;
-	const int& bytesPerRow = image.step;
+    const int& width = (int)image.cols;
+	const int& height = (int)image.rows;
+	const int& bytesPerRow = (int)image.step;
 
     cv::Mat result;
     if (enableCartoon) {

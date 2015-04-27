@@ -42,9 +42,9 @@
 
 + (void)filterBlurBilateral:(Mat)image withKernelSize:(int)kernel_size;
 {
-	const int& width = image.cols;
-	const int& height = image.rows;
-	const int& bytesPerRow = image.step[0];
+	const int& width = (int)image.cols;
+	const int& height = (int)image.rows;
+	const int& bytesPerRow = (int)image.step[0];
 	
 	// we need to copy because src.data != dst.data must hold with bilateral filter
 	unsigned char* data_copy = new unsigned char[max(width,bytesPerRow)*height];
@@ -68,9 +68,9 @@
 	
 	[CvConvolutionController filterBlurGaussian:image withKernelSize:3];
 	
-	const int& width = image.cols;
-	const int& height = image.rows;
-	const int& bytesPerRow = image.step[0];
+	const int& width = (int)image.cols;
+	const int& height = (int)image.rows;
+	const int& bytesPerRow = (int)image.step[0];
 	
 	// we need to copy because src.data != dst.data must hold with bilateral filter
 	unsigned char* data_copy = new unsigned char[max(width,bytesPerRow)*height];
@@ -96,9 +96,9 @@
 	
 	[CvConvolutionController filterBlurGaussian:image withKernelSize:kernel_size];
 	
-	const int& width = image.cols;
-	const int& height = image.rows;
-	const int& bytesPerRow = image.step[0];
+	const int& width = (int)image.cols;
+	const int& height = (int)image.rows;
+	const int& bytesPerRow = (int)image.step[0];
 	
 	// we need to copy because src.data != dst.data must hold with bilateral filter
 	unsigned char* data_copy = new unsigned char[max(width,bytesPerRow)*height];
@@ -133,9 +133,9 @@
 	int ratio = 3;
 	
 	
-	const int& width = image.cols;
-	const int& height = image.rows;
-	const int& bytesPerRow = image.step[0];
+	const int& width = (int)image.cols;
+	const int& height = (int)image.rows;
+	const int& bytesPerRow = (int)image.step[0];
 	
 	// we need to copy because src.data != dst.data must hold with bilateral filter
 	unsigned char* data_copy = new unsigned char[max(width,bytesPerRow)*height];
@@ -253,9 +253,9 @@
 // TODO
 + (void)filterBlurBilateralAccelerated:(Mat)image withKernelSize:(int)kernel_size;
 {
-	const int& width = image.cols;
-	const int& height = image.rows;
-	const int& bytesPerRow = image.step[0];
+	const int& width = (int)image.cols;
+	const int& height = (int)image.rows;
+	const int& bytesPerRow = (int)image.step[0];
 	
 	// we need to copy because src.data != dst.data must hold with bilateral filter
 	unsigned char* data_copy = new unsigned char[max(width,bytesPerRow)*height];
