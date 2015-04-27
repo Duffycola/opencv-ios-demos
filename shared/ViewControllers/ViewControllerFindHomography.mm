@@ -273,7 +273,7 @@ enum CVFeatureDescriptorType actionSheetDescriptorTypes[] = {
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex;
 {
-	NSLog(@"button index: %d", buttonIndex);
+	NSLog(@"button index: %ld", (long)buttonIndex);
 	
 	if (actionSheet.cancelButtonIndex == buttonIndex) {
 		return;
